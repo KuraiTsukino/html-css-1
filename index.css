@@ -1,7 +1,8 @@
+
 * {
     margin: 0;
     padding: 0;
-    background-color: lightgray;
+    background-color: lightgray; 
 }
 
 body {
@@ -12,13 +13,24 @@ body {
 }
 
 header {
-    width: 100%;
+    width: 96%;
     height: 100px;
     background-color: pink;
     margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation-name: header;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes header {
+    from {
+        background-color: pink;
+        border-radius: 0%;}
+    to {background-color: violet;
+        border-radius: 50%}
 }
 
 section {
@@ -34,6 +46,17 @@ section {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    animation-name: orange;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes orange {
+    from {
+        background-color: orange;
+        border-radius: 0%;}
+    to {background-color: rgb(95, 59, 17);
+        border-radius: 50%}
 }
 
 .yellow {
@@ -44,6 +67,15 @@ section {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    animation-name: yellow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes yellow {
+    from {
+        background-color: yellow}
+    to {background-color: yellowgreen}
 }
 
 .blue {
@@ -54,10 +86,27 @@ section {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    animation-name: blue;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blue {
+    from {
+        background-color: lightblue;
+        border-radius: 0%;}
+    to {background-color: blue;
+        border-radius: 50%}
 }
 
 footer {
     display: flex;
+    margin: 10px;
+}
+
+.roses {
+    margin: 10px;
+    margin-left: 10px;
 }
 
 .rose {
@@ -67,6 +116,14 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    animation-name: rosa;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rosa {
+    from {background-color: palevioletred}
+    to {background-color: darkmagenta}
 }
 
 .green {
@@ -76,6 +133,19 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    margin: 10px;
+    margin-left: 20px;
+    animation-name: verde;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes verde {
+    from {
+        background-color: aqua;
+        border-radius: 0%;}
+    to {background-color: green;
+        border-radius: 50%}
 }
 
 @media screen and (max-width: 600px) {
